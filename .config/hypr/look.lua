@@ -52,25 +52,15 @@ hl.config({
 })
 
 -- Smooth Animations
-hl.config({
-	animations = {
-		bezier = {
-			"smoothOut, 0.36, 0, 0.66, -0.56",
-			"smoothIn, 0.25, 1, 0.5, 1",
-			"overshot, 0.4, 0.8, 0.2, 1.2"
-		}
-	}
-})
-
 hl.animation({ leaf = "global", enabled = true, speed = 8.0, bezier = "default" })
-hl.animation({ leaf = "windows", enabled = true, speed = 6.0, bezier = "overshot", style = "popin 80%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 6.0, bezier = "smoothOut", style = "popin 80%" })
-hl.animation({ leaf = "windowsMove", enabled = true, speed = 6.0, bezier = "smoothIn", style = "slide" })
+hl.animation({ leaf = "windows", enabled = true, speed = 6.0, bezier = "default", style = "popin 80%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 6.0, bezier = "default", style = "popin 80%" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 6.0, bezier = "default", style = "slide" })
 hl.animation({ leaf = "border", enabled = true, speed = 10.0, bezier = "default" })
-hl.animation({ leaf = "fade", enabled = true, speed = 6.0, bezier = "smoothIn" })
-hl.animation({ leaf = "fadeDim", enabled = true, speed = 6.0, bezier = "smoothIn" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 7.0, bezier = "smoothIn", style = "slide" })
-hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 7.0, bezier = "smoothIn", style = "slidefadevert 20%" })
+hl.animation({ leaf = "fade", enabled = true, speed = 6.0, bezier = "default" })
+hl.animation({ leaf = "fadeDim", enabled = true, speed = 6.0, bezier = "default" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 7.0, bezier = "default", style = "slide" })
+hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 7.0, bezier = "default", style = "slidefadevert 20%" })
 
 -- For Noctalia Color templates
 noctalia.apply_theme()
