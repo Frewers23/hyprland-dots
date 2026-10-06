@@ -71,6 +71,9 @@ hl.bind("SUPER + ALT + 9", hl.dsp.window.move({ workspace = 9 }), { description 
 hl.unbind("SUPER + ALT + 0")
 hl.bind("SUPER + ALT + 0", hl.dsp.window.move({ workspace = 10 }), { description = "Move window to workspace 10" })
 
+hl.unbind("SUPER + minus")
+hl.bind("SUPER + minus", hl.dsp.exec_cmd("hyprctl dispatch hyprexpo:expo toggle"), { description = "Toggle Workspace Overview" })
+
 -- 5. Focus & Movement
 hl.unbind("SUPER + Left")
 hl.bind("SUPER + Left", hl.dsp.exec_cmd("hyprctl dispatch movefocus l"), { description = "Focus window left" })
