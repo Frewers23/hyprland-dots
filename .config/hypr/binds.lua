@@ -73,28 +73,28 @@ hl.bind("SUPER + ALT + 0", hl.dsp.window.move({ workspace = 10 }), { description
 
 -- 5. Focus & Movement
 hl.unbind("SUPER + Left")
-hl.bind("SUPER + Left", function() hl.command("movefocus l") end, { description = "Focus window left" })
+hl.bind("SUPER + Left", hl.dsp.exec_cmd("hyprctl dispatch movefocus l"), { description = "Focus window left" })
 hl.unbind("SUPER + Right")
-hl.bind("SUPER + Right", function() hl.command("movefocus r") end, { description = "Focus window right" })
+hl.bind("SUPER + Right", hl.dsp.exec_cmd("hyprctl dispatch movefocus r"), { description = "Focus window right" })
 hl.unbind("SUPER + Up")
-hl.bind("SUPER + Up", function() hl.command("movefocus u") end, { description = "Focus window up" })
+hl.bind("SUPER + Up", hl.dsp.exec_cmd("hyprctl dispatch movefocus u"), { description = "Focus window up" })
 hl.unbind("SUPER + Down")
-hl.bind("SUPER + Down", function() hl.command("movefocus d") end, { description = "Focus window down" })
+hl.bind("SUPER + Down", hl.dsp.exec_cmd("hyprctl dispatch movefocus d"), { description = "Focus window down" })
 
 hl.unbind("SUPER + SHIFT + Left")
-hl.bind("SUPER + SHIFT + Left", function() hl.command("movewindow l") end, { description = "Move window left" })
+hl.bind("SUPER + SHIFT + Left", hl.dsp.exec_cmd("hyprctl dispatch movewindow l"), { description = "Move window left" })
 hl.unbind("SUPER + SHIFT + Right")
-hl.bind("SUPER + SHIFT + Right", function() hl.command("movewindow r") end, { description = "Move window right" })
+hl.bind("SUPER + SHIFT + Right", hl.dsp.exec_cmd("hyprctl dispatch movewindow r"), { description = "Move window right" })
 hl.unbind("SUPER + SHIFT + Up")
-hl.bind("SUPER + SHIFT + Up", function() hl.command("movewindow u") end, { description = "Move window up" })
+hl.bind("SUPER + SHIFT + Up", hl.dsp.exec_cmd("hyprctl dispatch movewindow u"), { description = "Move window up" })
 hl.unbind("SUPER + SHIFT + Down")
-hl.bind("SUPER + SHIFT + Down", function() hl.command("movewindow d") end, { description = "Move window down" })
+hl.bind("SUPER + SHIFT + Down", hl.dsp.exec_cmd("hyprctl dispatch movewindow d"), { description = "Move window down" })
 
 -- 6. Special Workspace (Scratchpad)
 hl.unbind("SUPER + S")
-hl.bind("SUPER + S", function() hl.command("togglespecialworkspace magic") end, { description = "Toggle scratchpad" })
+hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprctl dispatch togglespecialworkspace magic"), { description = "Toggle scratchpad" })
 hl.unbind("SUPER + SHIFT + S")
-hl.bind("SUPER + SHIFT + S", function() hl.command("movetoworkspace special:magic") end, { description = "Move window to scratchpad" })
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprctl dispatch movetoworkspace special:magic"), { description = "Move window to scratchpad" })
 
 -- 7. Media & Hardware
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true, description = "Volume Up" })
