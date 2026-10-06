@@ -70,3 +70,37 @@ hl.unbind("SUPER + ALT + 9")
 hl.bind("SUPER + ALT + 9", hl.dsp.window.move({ workspace = 9 }), { description = "Move window to workspace 9" })
 hl.unbind("SUPER + ALT + 0")
 hl.bind("SUPER + ALT + 0", hl.dsp.window.move({ workspace = 10 }), { description = "Move window to workspace 10" })
+
+-- 5. Focus & Movement
+hl.unbind("SUPER + Left")
+hl.bind("SUPER + Left", function() hl.command("movefocus l") end, { description = "Focus window left" })
+hl.unbind("SUPER + Right")
+hl.bind("SUPER + Right", function() hl.command("movefocus r") end, { description = "Focus window right" })
+hl.unbind("SUPER + Up")
+hl.bind("SUPER + Up", function() hl.command("movefocus u") end, { description = "Focus window up" })
+hl.unbind("SUPER + Down")
+hl.bind("SUPER + Down", function() hl.command("movefocus d") end, { description = "Focus window down" })
+
+hl.unbind("SUPER + SHIFT + Left")
+hl.bind("SUPER + SHIFT + Left", function() hl.command("movewindow l") end, { description = "Move window left" })
+hl.unbind("SUPER + SHIFT + Right")
+hl.bind("SUPER + SHIFT + Right", function() hl.command("movewindow r") end, { description = "Move window right" })
+hl.unbind("SUPER + SHIFT + Up")
+hl.bind("SUPER + SHIFT + Up", function() hl.command("movewindow u") end, { description = "Move window up" })
+hl.unbind("SUPER + SHIFT + Down")
+hl.bind("SUPER + SHIFT + Down", function() hl.command("movewindow d") end, { description = "Move window down" })
+
+-- 6. Special Workspace (Scratchpad)
+hl.unbind("SUPER + S")
+hl.bind("SUPER + S", function() hl.command("togglespecialworkspace magic") end, { description = "Toggle scratchpad" })
+hl.unbind("SUPER + SHIFT + S")
+hl.bind("SUPER + SHIFT + S", function() hl.command("movetoworkspace special:magic") end, { description = "Move window to scratchpad" })
+
+-- 7. Media & Hardware
+hl.bind("", "XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true, description = "Volume Up" })
+hl.bind("", "XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true, description = "Volume Down" })
+hl.bind("", "XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { description = "Toggle Mute" })
+
+-- 8. Utilities
+hl.bind("SUPER", "C", hl.dsp.exec_cmd("hyprpicker -a"), { description = "Color Picker" })
+hl.bind("SUPER", "Escape", hl.dsp.exec_cmd("wlogout"), { description = "Power Menu" })
