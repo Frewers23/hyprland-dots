@@ -1,0 +1,27 @@
+/* Wymuszenie ProFontIIx Nerd Font dla wszystkich elementów interfejsu Spotify */
+*,
+body,
+button,
+input,
+select,
+textarea,
+.main-type-m2,
+.encore-text-body-medium,
+.encore-text-body-small,
+.encore-text-title-small,
+.encore-text-headline-large {
+    font-family: "ProFontIIx Nerd Font", "Terminus", monospace !important;
+    font-weight: bold !important;
+    -webkit-font-smoothing: none !important;
+    font-smooth: never !important;
+}
+
+/* Ochrona ikonek Spotify (Encore Icons / SVG) przed uszkodzeniem */
+[class*="spoticon-"],
+[class*="encore-icon"],
+svg,
+i {
+    font-family: inherit;
+    font-weight: normal !important;
+    -webkit-font-smoothing: auto !important;
+}

@@ -1,0 +1,257 @@
+config_version = 14
+
+[audio]
+enable_overdrive = true
+
+[bar.default]
+background_opacity = 0.0
+capsule = true
+capsule_foreground = "primary"
+capsule_padding = 9.0
+center = [ "group:g3", "clock", "control-center", "media" ]
+end = [ "group:g2", "group:g1" ]
+font_weight = 800
+margin_ends = 10
+panel_overlap = -2
+shadow = false
+start = [ "workspaces", "group:g4", "screenshot" ]
+thickness = 32
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    foreground = "primary"
+    id = "g1"
+    members = [ "bluetooth", "network", "battery", "session" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    foreground = "primary"
+    id = "g2"
+    members = [ "notifications", "sysmon", "output_volume", "airpods" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    foreground = "primary"
+    id = "g3"
+    members = [ "weather" ]
+    opacity = 1.0
+    padding = 10.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border = ""
+    enabled = true
+    fill = "surface_variant"
+    foreground = "primary"
+    id = "g4"
+    members = [ "wallpaper", "wallhaven", "widget" ]
+    opacity = 1.0
+    padding = 9.0
+
+[brightness]
+minimum_brightness = 0.99999997764825821
+
+[control_center]
+background_opacity = 0.5
+hidden_tabs = [ "screen-time" ]
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "mic_mute"
+
+    [[control_center.shortcuts]]
+    type = "audio"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.99999997764825821
+
+[location]
+latitude = 50.82077291769285
+longitude = 16.041396741210733
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@Unknown-1", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@Unknown-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1024.0
+    cy = 970.0
+    output = "Unknown-1"
+    placement_height = 1152.0
+    placement_width = 2048.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@Unknown-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1024.0
+    cy = 957.86669921875
+    output = "eDP-1"
+    placement_height = 1152.0
+    placement_width = 2048.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+cheatsheet_layer = "overlay"
+compositor = "hyprland"
+hyprland_config = ""
+hyprland_lua_config = "/home/frewers/.config/hypr/binds.lua"
+mango_config = ""
+niri_config = ""
+
+[plugins]
+enabled = [
+    "kenn/keybind-cheatsheet",
+    "noctalia/wallhaven",
+    "harveywuk/airpods",
+    "baizhu/asus-gpu-mode",
+    "oldirtty/color_picker",
+    "vn1k/cursor"
+]
+
+[shell]
+avatar_path = "/home/frewers/Documents/1.webp"
+button_borders = false
+card_borders = false
+font_family = "ProFontIIx Nerd Font"
+input_borders = false
+popup_borders = false
+popup_shadows = false
+time_format = "{:%H:%M:%S}"
+
+    [shell.launcher]
+    compact = true
+
+    [shell.panel]
+    borders = false
+    control_center_placement = "floating"
+    transparency_mode = "glass"
+
+    [shell.screenshot]
+    directory = "/home/frewers/Pictures/screenshots"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Creamy Forest"
+custom_palette = "a-snowy-mountain-tops-mut"
+mode = "dark"
+shell_mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk4", "hyprland", "kitty", "qt" ]
+    community_ids = [
+        "antigravity",
+        "opencode",
+        "spicetify",
+        "zen-browser",
+        "discord",
+        "neovim",
+        "prismlauncher",
+        "steam",
+        "rofi",
+        "fastfetch",
+        "papirus-icons",
+        "yazi"
+    ]
+
+[wallpaper.default]
+path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+
+[wallpaper.last]
+path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+
+[widget.airpods]
+type = "harveywuk/airpods:airpods"
+
+[widget.clock]
+font_family = "ProFontIIx Nerd Font"
+format = "{:%H:%M:%S}"
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
