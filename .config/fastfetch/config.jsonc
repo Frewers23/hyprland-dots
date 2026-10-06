@@ -1,0 +1,125 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/frewers/.config/fastfetch/images/shig.gif",
+    "type": "kitty-icat",
+    "width": 18,
+    "height": 18,
+    "padding": {
+      "top": 7,
+      "left": 2,
+      "right": 3
+    }
+  },
+  "display": {
+    "disableLinewrap": true,
+    "separator": "  ",
+    "color": {
+      "keys": "blue"
+    },
+    "percent": {
+      "color": {
+        "green": "default",
+        "yellow": "default",
+        "red": "default"
+      }
+    }
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[34m╭────────────────── System ───────────────────╮\u001b[0m"
+    },
+    {
+      "type": "os",
+      "key": "│ 󰣇 OS          ",
+    },
+    {
+      "type": "board",
+      "key": "│ 󰌢 Host        ",
+      "format": "{1}"
+    },
+    {
+      "type": "kernel",
+      "key": "│  Kernel      ",
+      "format": "{1}"
+    },
+    {
+      "type": "uptime",
+      "key": "│ 󰅐 Uptime      "
+    },
+    {
+      "type": "packages",
+      "key": "│ 󰏖 Packages    "
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[34m├────────────────── Desktop ──────────────────┤\u001b[0m"
+    },
+    {
+      "type": "de",
+      "key": "│ 󰧨 DE          ",
+      "format": "{1}"
+    },
+    {
+      "type": "wm",
+      "key": "│  WM          ",
+      "format": "{1}"
+    },
+
+    {
+      "type": "terminal",
+      "key": "│  Terminal    ",
+      "format": "{1}"
+    },
+    {
+      "type": "shell",
+      "key": "│  Shell       ",
+      "format": "{1}"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[34m├────────────────── Hardware ─────────────────┤\u001b[0m"
+    },
+    {
+      "type": "display",
+      "key": "│ 󰍹 Display     ",
+      "format": "{1}x{2} @ {3}Hz"
+    },
+    {
+      "type": "cpu",
+      "key": "│  CPU         ",
+      "format": "{1}"
+    },
+    {
+      "type": "command",
+      "key": "│ 󰢮 GPU         ",
+      "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==1 {print $2}' | sed -E 's/NVIDIA //; s/ \\/ Max-Q.*//'"
+    },
+    {
+      "type": "command",
+      "key": "│ 󰢮 GPU         ",
+      "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==2 {print $2}' | sed -E 's/ \\[Integrated\\]//'"
+    },
+    {
+      "type": "memory",
+      "key": "│  Memory      ",
+      "format": "{1} / {2}"
+    },
+    {
+      "type": "disk",
+      "key": "│ 󰋊 Disk        ",
+      "format": "{1} / {2}"
+    },
+    {
+      "type": "battery",
+      "key": "│  Battery     "
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[34m╰─────────────────────────────────────────────╯\u001b[0m"
+    }
+  ]
+}
