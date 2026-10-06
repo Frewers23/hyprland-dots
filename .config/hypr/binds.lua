@@ -103,4 +103,4 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
 
 -- 8. Utilities
 hl.bind("SUPER + C", hl.dsp.exec_cmd("hyprpicker -a"), { description = "Color Picker" })
-hl.bind("SUPER + Escape", hl.dsp.exec_cmd("wlogout"), { description = "Power Menu" })
+hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"), { description = "Power Menu" })
