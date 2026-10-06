@@ -23,3 +23,12 @@ hl.layer_rule({
     blur = false,
     ignore_alpha = 1,
 })
+
+hl.layer_rule({
+    name = "panel blur off",
+    match = {
+        namespace = "noctalia-panel",
+    },
+    blur = false,
+    ignore_alpha = 1,
+})
