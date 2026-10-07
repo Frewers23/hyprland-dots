@@ -1,0 +1,80 @@
+configuration {
+    modi: "drun,run,window";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
+}
+
+@import "noctalia.rasi"
+
+* {
+    font: "Iosevka Nerd Font 13";
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+window {
+    transparency: "real";
+    background-color: @background;
+    text-color: @foreground;
+    border: 2px;
+    border-color: @primary;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px;
+}
+
+prompt {
+    background-color: @primary;
+    text-color: @background;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+entry {
+    background-color: @surface_container;
+    text-color: @foreground;
+    placeholder-color: @surface_variant;
+    placeholder: "Search...";
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 0px 0px 10px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: transparent;
+    spacing: 0;
+    margin: 0px 0px 20px 0px;
+}
+
+listview {
+    background-color: transparent;
+    columns: 2;
+    lines: 8;
+    spacing: 5px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: @primary;
+    text-color: @background;
+}

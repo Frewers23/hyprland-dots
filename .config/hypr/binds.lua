@@ -1,7 +1,7 @@
 -- binds.lua
 
 -- 1. System & UI
-hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"), { release = true, description = "Open App Launcher" })
+hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("rofi -show drun"), { release = true, description = "Open App Launcher" })
 hl.unbind("SUPER + slash")
 hl.bind("SUPER + slash", hl.dsp.exec_cmd("noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"), { description = "Toggle Keybind Cheatsheet" })
 hl.unbind("CTRL + Insert")

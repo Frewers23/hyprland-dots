@@ -4,6 +4,8 @@ config_version = 14
 enable_overdrive = true
 
 [bar.default]
+enabled = false
+
 background_opacity = 0.0
 capsule = true
 capsule_foreground = "primary"
@@ -106,7 +108,7 @@ latitude = 50.82077291769285
 longitude = 16.041396741210733
 
 [lockscreen_widgets]
-enabled = false
+
 schema_version = 2
 widget_order = [ "lockscreen-login-box@Unknown-1", "lockscreen-login-box@eDP-1" ]
 
@@ -222,6 +224,9 @@ wallpaper_scheme = "m3-tonal-spot"
     builtin_ids = [ "btop", "cava", "gtk4", "hyprland", "kitty", "qt" ]
     community_ids = [
         "antigravity",
+        "quickshell",
+        "rofi",
+        "waybar",
         "opencode",
         "spicetify",
         "zen-browser",
@@ -230,19 +235,20 @@ wallpaper_scheme = "m3-tonal-spot"
         "prismlauncher",
         "steam",
         "rofi",
+        "waybar",
         "fastfetch",
         "papirus-icons",
         "yazi"
     ]
 
 [wallpaper.default]
-path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
 
 [wallpaper.last]
-path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
+path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
 
 [widget.airpods]
 type = "harveywuk/airpods:airpods"

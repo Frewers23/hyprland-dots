@@ -9,4 +9,5 @@ hl.on("hyprland.start", function()
     
     -- From hyprland-custom.lua
     hl.exec_cmd("noctalia --daemon")
+    hl.exec_cmd("waybar")
 end)

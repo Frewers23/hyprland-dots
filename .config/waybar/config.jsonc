@@ -1,0 +1,85 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin-top": 4,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 8,
+
+  "modules-left": ["hyprland/workspaces", "custom/tools"],
+  "modules-center": ["custom/weather", "clock", "custom/idle", "mpris"],
+  "modules-right": ["group/status", "bluetooth", "network", "battery", "custom/power"],
+
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate"
+  },
+
+  "custom/tools": {
+    "format": "  ",
+    "tooltip": false
+  },
+
+  "custom/weather": {
+    "exec": "curl -s 'wttr.in/Wroclaw?format=%c+%t+%C'",
+    "interval": 900,
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "interval": 1,
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+
+  "custom/idle": {
+    "format": "󰅶",
+    "tooltip": false
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "player-icons": { "default": "󰎆" },
+    "max-length": 40
+  },
+
+  "group/status": {
+    "orientation": "inherit",
+    "modules": ["custom/notif", "cpu", "pulseaudio"]
+  },
+
+  "custom/notif": { "format": "", "tooltip": false },
+  "cpu": { "format": " {usage}%", "interval": 2 },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": { "default": ["", "", ""] },
+    "on-click": "pavucontrol"
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-connected": " {num_connections}",
+    "on-click": "blueman-manager"
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 offline",
+    "max-length": 25
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "states": { "warning": 30, "critical": 15 }
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "wlogout",
+    "tooltip": false
+  }
+}
