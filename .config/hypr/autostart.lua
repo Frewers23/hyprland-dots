@@ -8,5 +8,5 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
     
     -- From hyprland-custom.lua
-    hl.exec_cmd("noctalia --daemon")
+    hl.exec_cmd("env LC_TIME=en_US.UTF-8 noctalia --daemon")
 end)
