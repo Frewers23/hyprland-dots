@@ -34,25 +34,25 @@
     },
     {
       "type": "os",
-      "key": "│ 󰣇 OS          ",
+      "key": "│ 󰣇  OS         ",
     },
     {
       "type": "board",
-      "key": "│ 󰌢 Host        ",
+      "key": "│ 󰌢  Host       ",
       "format": "{1}"
     },
     {
       "type": "kernel",
-      "key": "│  Kernel      ",
+      "key": "│   Kernel     ",
       "format": "{1}"
     },
     {
       "type": "uptime",
-      "key": "│ 󰅐 Uptime      "
+      "key": "│ 󰅐  Uptime     "
     },
     {
       "type": "packages",
-      "key": "│ 󰏖 Packages    "
+      "key": "│ 󰏖  Packages   "
     },
     {
       "type": "custom",
@@ -60,23 +60,23 @@
     },
     {
       "type": "de",
-      "key": "│ 󰧨 DE          ",
+      "key": "│ 󰧨  DE         ",
       "format": "{1}"
     },
     {
       "type": "wm",
-      "key": "│  WM          ",
+      "key": "│   WM         ",
       "format": "{1}"
     },
 
     {
       "type": "terminal",
-      "key": "│  Terminal    ",
+      "key": "│   Terminal   ",
       "format": "{1}"
     },
     {
       "type": "shell",
-      "key": "│  Shell       ",
+      "key": "│   Shell      ",
       "format": "{1}"
     },
     {
@@ -85,37 +85,37 @@
     },
     {
       "type": "display",
-      "key": "│ 󰍹 Display     ",
+      "key": "│ 󰍹  Display    ",
       "format": "{1}x{2} @ {3}Hz"
     },
     {
       "type": "cpu",
-      "key": "│  CPU         ",
+      "key": "│   CPU        ",
       "format": "{1}"
     },
     {
       "type": "command",
-      "key": "│ 󰢮 GPU         ",
+      "key": "│ 󰢮  GPU        ",
       "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==1 {print $2}' | sed -E 's/NVIDIA //; s/ \\/ Max-Q.*//'"
     },
     {
       "type": "command",
-      "key": "│ 󰢮 GPU         ",
+      "key": "│ 󰢮  GPU        ",
       "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==2 {print $2}' | sed -E 's/ \\[Integrated\\]//'"
     },
     {
       "type": "memory",
-      "key": "│  Memory      ",
+      "key": "│   Memory     ",
       "format": "{1} / {2}"
     },
     {
       "type": "disk",
-      "key": "│ 󰋊 Disk        ",
+      "key": "│ 󰋊  Disk       ",
       "format": "{1} / {2}"
     },
     {
       "type": "battery",
-      "key": "│  Battery     "
+      "key": "│   Battery    "
     },
     {
       "type": "custom",
