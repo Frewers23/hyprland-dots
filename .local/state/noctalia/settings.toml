@@ -4,13 +4,12 @@ config_version = 14
 enable_overdrive = true
 
 [bar.default]
-enabled = false
-
 background_opacity = 0.0
 capsule = true
 capsule_foreground = "primary"
 capsule_padding = 9.0
 center = [ "group:g3", "clock", "control-center", "media" ]
+compositor_blur = false
 end = [ "group:g2", "group:g1" ]
 font_weight = 800
 margin_ends = 10
@@ -108,7 +107,6 @@ latitude = 50.82077291769285
 longitude = 16.041396741210733
 
 [lockscreen_widgets]
-
 schema_version = 2
 widget_order = [ "lockscreen-login-box@Unknown-1", "lockscreen-login-box@eDP-1" ]
 

@@ -32,12 +32,3 @@ hl.layer_rule({
     blur = false,
     ignore_alpha = 1,
 })
-
-hl.layer_rule({
-    name = "waybar blur",
-    match = {
-        namespace = "waybar",
-    },
-    blur = true,
-    ignore_alpha = 0,
-})
