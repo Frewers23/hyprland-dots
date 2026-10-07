@@ -1,4 +1,4 @@
-/* Wymuszenie ProFontIIx Nerd Font dla wszystkich elementów interfejsu Spotify */
+/* Wymuszenie Iosevka ExtraBold 13px dla wszystkich elementów interfejsu Spotify */
 *,
 body,
 button,
@@ -10,10 +10,9 @@ textarea,
 .encore-text-body-small,
 .encore-text-title-small,
 .encore-text-headline-large {
-    font-family: "ProFontIIx Nerd Font", "Terminus", monospace !important;
-    font-weight: bold !important;
-    -webkit-font-smoothing: none !important;
-    font-smooth: never !important;
+    font-family: "Iosevka Nerd Font ExtraBold", "IosevkaNerdFont-ExtraBold", "Iosevka Nerd Font", monospace !important;
+    font-weight: 800 !important;
+    font-size: 13px !important;
 }
 
 /* Ochrona ikonek Spotify (Encore Icons / SVG) przed uszkodzeniem */
@@ -23,5 +22,4 @@ svg,
 i {
     font-family: inherit;
     font-weight: normal !important;
-    -webkit-font-smoothing: auto !important;
 }

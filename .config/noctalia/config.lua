@@ -1,6 +1,6 @@
 return {
     font = {
-        family = "ProFontIIx Nerd Font",
+        family = "Iosevka Nerd Font",
         size = 11,
     },
 }

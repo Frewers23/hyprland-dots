@@ -191,8 +191,9 @@ enabled = [
 avatar_path = "/home/frewers/Documents/1.webp"
 button_borders = false
 card_borders = false
-font_family = "ProFontIIx Nerd Font"
+font_family = "Iosevka NF ExtraBold"
 input_borders = false
+lang = "en"
 popup_borders = false
 popup_shadows = false
 time_format = "{:%H:%M:%S}"
@@ -247,7 +248,7 @@ path = "/home/frewers/Pictures/wallhaven-pokxqm.jpg"
 type = "harveywuk/airpods:airpods"
 
 [widget.clock]
-font_family = "ProFontIIx Nerd Font"
+font_family = "Iosevka NF ExtraBold"
 format = "{:%H:%M:%S}"
 
 [widget.wallhaven]
