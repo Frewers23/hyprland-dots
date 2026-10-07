@@ -4,8 +4,8 @@
     "margin-top": 6,
     "margin-left": 12,
     "margin-right": 12,
-    "height": 40,
-    "spacing": 10,
+    "height": 32,
+    "spacing": 8,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "network", "pulseaudio", "battery"],
@@ -14,13 +14,13 @@
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
-            "1": "一",
-            "2": "二",
-            "3": "三",
-            "4": "四",
-            "5": "五",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
             "urgent": "",
-            "active": "",
+            "active": "",
             "default": ""
         }
     },
@@ -67,7 +67,7 @@
         "on-click-right": "pavucontrol"
     },
     "tray": {
-        "icon-size": 18,
-        "spacing": 10
+        "icon-size": 16,
+        "spacing": 8
     }
 }
