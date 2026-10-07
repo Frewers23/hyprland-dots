@@ -4,6 +4,7 @@
     font-family: "Iosevka Nerd Font", monospace;
     font-size: 14px;
     font-weight: bold;
+    min-height: 0;
 }
 
 window#waybar {
@@ -17,12 +18,21 @@ tooltip {
     border-radius: 10px;
 }
 
-#workspaces button {
-    padding: 0 10px;
-    color: @subtext0;
+#workspaces {
     background: @surface0;
     border-radius: 15px;
-    margin: 5px;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @subtext0;
+    border-radius: 10px;
+    margin: 4px 2px;
+}
+
+#workspaces button:hover {
+    background: @surface1;
 }
 
 #workspaces button.active {
@@ -35,26 +45,29 @@ tooltip {
 #cpu,
 #memory,
 #disk,
-#temperature,
-#backlight,
 #network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#window {
+#tray {
     padding: 0 15px;
     color: @text;
     background: @surface0;
     border-radius: 15px;
-    margin: 5px;
+    margin: 0;
+}
+
+/* Specjalne odstępy między pigułkami z prawej strony */
+.modules-right > * {
+    margin-left: 8px;
+}
+
+.modules-left > * {
+    margin-right: 8px;
 }
 
 #window {
     background: transparent;
+    padding: 0 15px;
+    color: @subtext0;
 }
 
 #clock {
@@ -80,4 +93,8 @@ tooltip {
 
 #pulseaudio {
     color: @peach;
+}
+
+#tray {
+    padding: 0 10px;
 }

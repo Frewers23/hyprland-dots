@@ -1,6 +1,9 @@
 {
     "layer": "top",
     "position": "top",
+    "margin-top": 6,
+    "margin-left": 12,
+    "margin-right": 12,
     "height": 40,
     "spacing": 10,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
@@ -23,7 +26,8 @@
     },
     "clock": {
         "format": " {:%H:%M}",
-        "format-alt": " {:%A, %B %d, %Y}"
+        "format-alt": " {:%A, %B %d, %Y}",
+        "on-click": "noctalia msg panel-toggle control-center"
     },
     "battery": {
         "states": {
@@ -33,7 +37,8 @@
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "on-click": "noctalia msg panel-toggle control-center"
     },
     "network": {
         "format-wifi": " {essid}",
@@ -41,7 +46,8 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠ Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "noctalia msg panel-toggle control-center network"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -57,7 +63,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "noctalia msg panel-toggle control-center audio",
+        "on-click-right": "pavucontrol"
     },
     "tray": {
         "icon-size": 18,
