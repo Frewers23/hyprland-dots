@@ -34,6 +34,7 @@
     },
     {
       "type": "os",
+      "format": "{pretty-name}",
       "key": "│ 󰣇  OS         ",
     },
     {
@@ -96,7 +97,7 @@
     {
       "type": "command",
       "key": "│ 󰢮  GPU        ",
-      "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==1 {print $2}' | sed -E 's/NVIDIA //; s/ \\/ Max-Q.*//'"
+      "text": "fastfetch -c none --logo none -s gpu --pipe | awk -F': ' 'NR==1 {print $2}' | sed -E 's/NVIDIA //; s/ Mobile//; s/ \\/ Max-Q.*//'"
     },
     {
       "type": "command",
@@ -112,10 +113,6 @@
       "type": "disk",
       "key": "│ 󰋊  Disk       ",
       "format": "{1} / {2}"
-    },
-    {
-      "type": "battery",
-      "key": "│   Battery    "
     },
     {
       "type": "custom",
