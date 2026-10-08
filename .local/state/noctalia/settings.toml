@@ -6,68 +6,68 @@ enable_overdrive = true
 [bar.default]
 background_opacity = 0.0
 capsule = true
-capsule_foreground = "primary"
-capsule_padding = 9.0
-center = [ "group:g3", "clock", "control-center", "media" ]
+capsule_border_width = 0.0
+capsule_fill = "secondary"
+capsule_foreground = "#000000"
+capsule_opacity = 0.44999998994171619
+capsule_padding = 11.0
+capsule_radius = 8
+capsule_thickness = 0.79999998584389687
+center = [ "group:g2" ]
 compositor_blur = false
-end = [ "group:g2", "group:g1" ]
+end = [ "volume", "group:g3", "network", "session" ]
+font_family = "Iosevka NF ExtraBold"
 font_weight = 800
+margin_edge = 5
 margin_ends = 10
 panel_overlap = -2
 shadow = false
-start = [ "workspaces", "group:g4", "screenshot" ]
-thickness = 32
+start = [ "workspaces", "group:g1" ]
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
+    border_width = 0.0
     enabled = true
-    fill = "surface_variant"
-    foreground = "primary"
+    fill = "secondary"
+    foreground = "#000000"
     id = "g1"
-    members = [ "bluetooth", "network", "battery", "session" ]
-    opacity = 1.0
-    padding = 6.0
+    members = [ "wallpaper", "wallhaven_2" ]
+    opacity = 0.44999998807907104
+    padding = 11.0
+    radius = 8.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
+    border_width = 0.0
     enabled = true
-    fill = "surface_variant"
-    foreground = "primary"
+    fill = "secondary"
+    foreground = "#000000"
     id = "g2"
-    members = [ "notifications", "sysmon", "output_volume", "airpods" ]
-    opacity = 1.0
-    padding = 6.0
+    members = [ "clock", "date" ]
+    opacity = 0.44999998807907104
+    padding = 11.0
+    radius = 8.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
+    border_width = 0.0
     enabled = true
-    fill = "surface_variant"
-    foreground = "primary"
+    fill = "secondary"
+    foreground = "#000000"
     id = "g3"
-    members = [ "weather" ]
-    opacity = 1.0
-    padding = 10.0
-
-    [[bar.default.capsule_group]]
-    accordion = false
-    accordion_direction = "end"
-    border = ""
-    enabled = true
-    fill = "surface_variant"
-    foreground = "primary"
-    id = "g4"
-    members = [ "wallpaper", "wallhaven", "widget" ]
-    opacity = 1.0
-    padding = 9.0
+    members = [ "bluetooth", "airpods" ]
+    opacity = 0.44999998807907104
+    padding = 11.0
+    radius = 8.0
 
 [brightness]
 minimum_brightness = 0.99999997764825821
 
 [control_center]
-background_opacity = 0.5
+background_opacity = 0.0
 hidden_tabs = [ "screen-time" ]
 
     [[control_center.shortcuts]]
@@ -194,6 +194,7 @@ card_borders = false
 font_family = "Iosevka NF ExtraBold"
 input_borders = false
 lang = "en"
+panel_anchor_bar = "default"
 popup_borders = false
 popup_shadows = false
 time_format = "{:%H:%M:%S}"
@@ -204,10 +205,14 @@ time_format = "{:%H:%M:%S}"
     [shell.panel]
     borders = false
     control_center_placement = "floating"
-    transparency_mode = "glass"
+    list_item_background = true
+    shadow = false
 
     [shell.screenshot]
     directory = "/home/frewers/Pictures/screenshots"
+
+    [shell.shadow]
+    alpha = 0.0
 
 [theme]
 builtin = "Noctalia"
@@ -240,13 +245,13 @@ wallpaper_scheme = "m3-tonal-spot"
     ]
 
 [wallpaper.default]
-path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
+path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
 
 [wallpaper.last]
-path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
+path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/frewers/Pictures/a_ship_in_the_water.jpg"
+path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
 
 [widget.airpods]
 type = "harveywuk/airpods:airpods"
@@ -258,5 +263,11 @@ format = "{:%H:%M:%S}"
 [widget.wallhaven]
 type = "noctalia/wallhaven:wallhaven"
 
+[widget.wallhaven_2]
+type = "noctalia/wallhaven:wallhaven"
+
 [widget.widget]
 type = "oldirtty/color_picker:widget"
+
+[widget.workspaces]
+occupied_color = "primary"
