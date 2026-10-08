@@ -1,9 +1,17 @@
 -- binds.lua
 
 -- 1. System & UI
-hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"), { release = true, description = "Open App Launcher" })
+hl.bind(
+	"SUPER + SUPER_L",
+	hl.dsp.exec_cmd("rofi -show drun"),
+	{ release = true, description = "Open App Launcher" }
+)
 hl.unbind("SUPER + slash")
-hl.bind("SUPER + slash", hl.dsp.exec_cmd("noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"), { description = "Toggle Keybind Cheatsheet" })
+hl.bind(
+	"SUPER + slash",
+	hl.dsp.exec_cmd("noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"),
+	{ description = "Toggle Keybind Cheatsheet" }
+)
 hl.unbind("CTRL + Insert")
 hl.bind("CTRL + Insert", hl.dsp.exec_cmd("noctalia msg screenshot-region"), { description = "Take region screenshot" })
 
@@ -97,14 +105,26 @@ hl.bind("SUPER + SHIFT + Down", hl.dsp.exec_raw("movewindow", "d"), { descriptio
 hl.unbind("SUPER + S")
 hl.bind("SUPER + S", hl.dsp.exec_raw("togglespecialworkspace", "magic"), { description = "Toggle scratchpad" })
 hl.unbind("SUPER + SHIFT + S")
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_raw("movetoworkspace", "special:magic"), { description = "Move window to scratchpad" })
+hl.bind(
+	"SUPER + SHIFT + S",
+	hl.dsp.exec_raw("movetoworkspace", "special:magic"),
+	{ description = "Move window to scratchpad" }
+)
 
 -- 7. Media & Hardware
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true, description = "Volume Up" })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true, description = "Volume Down" })
+hl.bind(
+	"XF86AudioRaiseVolume",
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"),
+	{ repeating = true, description = "Volume Up" }
+)
+hl.bind(
+	"XF86AudioLowerVolume",
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
+	{ repeating = true, description = "Volume Down" }
+)
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { description = "Toggle Mute" })
 
 -- 8. Utilities
 hl.bind("SUPER + C", hl.dsp.exec_cmd("hyprpicker -a"), { description = "Color Picker" })
-hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"), { description = "Power Menu" })
+--hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"), { description = "Power Menu" })
 hl.bind("SUPER + U", hl.dsp.exec_raw("movefocus", "u"))

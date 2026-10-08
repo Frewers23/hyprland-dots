@@ -32,3 +32,12 @@ hl.layer_rule({
     blur = false,
     ignore_alpha = 1,
 })
+
+hl.layer_rule({
+    name = "quickshell blur",
+    match = {
+        namespace = "quickshell",
+    },
+    blur = true,
+    ignore_zero = true,
+})

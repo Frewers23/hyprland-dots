@@ -1,5 +1,5 @@
 configuration {
-    modi: "drun,run,window";
+    modi: "drun,run";
     icon-theme: "Papirus";
     show-icons: true;
     terminal: "kitty";
@@ -7,11 +7,7 @@ configuration {
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
-    display-drun: "   Apps ";
-    display-run: "   Run ";
-    display-window: " 﩯  Window";
-    display-Network: " 󰤨  Network";
-    sidebar-mode: true;
+    sidebar-mode: false;
 }
 
 @import "noctalia.rasi"
@@ -26,18 +22,14 @@ window {
     transparency: "real";
     background-color: @background;
     text-color: @foreground;
-    border: 2px;
-    border-color: @primary;
-    border-radius: 10px;
-    width: 600px;
-    padding: 20px;
+    border: 0px;
+    border-radius: 12px;
+    width: 500px;
+    padding: 15px;
 }
 
 prompt {
-    background-color: @primary;
-    text-color: @background;
-    border-radius: 5px;
-    padding: 10px 15px;
+    enabled: false;
 }
 
 entry {
@@ -45,22 +37,22 @@ entry {
     text-color: @foreground;
     placeholder-color: @surface_variant;
     placeholder: "Search...";
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0px 0px 0px 10px;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 0px;
 }
 
 inputbar {
-    children: [ prompt, entry ];
+    children: [ entry ];
     background-color: transparent;
     spacing: 0;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 15px 0px;
 }
 
 listview {
     background-color: transparent;
-    columns: 2;
-    lines: 8;
+    columns: 1;
+    lines: 6;
     spacing: 5px;
     cycle: true;
     dynamic: true;
@@ -70,11 +62,23 @@ listview {
 element {
     background-color: transparent;
     text-color: @foreground;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 element selected {
-    background-color: @primary;
-    text-color: @background;
+    background-color: @surface_variant;
+    text-color: @foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    background-color: inherit;
+    padding: 0 15px 0 0;
 }
