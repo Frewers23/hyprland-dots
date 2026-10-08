@@ -38,8 +38,8 @@ cat << ROFI > ~/.config/rofi/colors.rasi
     background: $(cat ~/.cache/wal/colors.json | jq -r '.special.background')e6;
     foreground: $(cat ~/.cache/wal/colors.json | jq -r '.special.foreground');
     primary: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color4');
-    surface_container: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color0')d0;
-    surface_variant: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color8')d0;
+    surface-container: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color0')d0;
+    surface-variant: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color8')d0;
 }
 ROFI
 

@@ -10,7 +10,7 @@ configuration {
     sidebar-mode: false;
 }
 
-@import "noctalia.rasi"
+@import "colors.rasi"
 
 * {
     font: "Iosevka Nerd Font 13";
@@ -33,9 +33,9 @@ prompt {
 }
 
 entry {
-    background-color: @surface_container;
+    background-color: @surface-container;
     text-color: @foreground;
-    placeholder-color: @surface_variant;
+    placeholder-color: @surface-variant;
     placeholder: "Search...";
     border-radius: 8px;
     padding: 12px;
@@ -67,7 +67,7 @@ element {
 }
 
 element selected {
-    background-color: @surface_variant;
+    background-color: @surface-variant;
     text-color: @foreground;
 }
 
