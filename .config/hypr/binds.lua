@@ -125,6 +125,7 @@ hl.bind(
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { description = "Toggle Mute" })
 
 -- 8. Utilities
+hl.bind("SUPER + T", hl.dsp.exec_cmd("bash /home/frewers/qs-wallpaper-picker/scripts/open_picker.sh"), { description = "Open Wallpaper Picker" })
 hl.bind("SUPER + C", hl.dsp.exec_cmd("hyprpicker -a"), { description = "Color Picker" })
 --hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"), { description = "Power Menu" })
 hl.bind("SUPER + U", hl.dsp.exec_raw("movefocus", "u"))
