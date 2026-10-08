@@ -1,0 +1,786 @@
+{
+  "change_serial": 419,
+  "entries": [
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 361,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791337069188,
+        "icon": null,
+        "id": 306,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791337063188,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 363,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791337291187,
+        "icon": null,
+        "id": 307,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791337285187,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 365,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791337523396,
+        "icon": null,
+        "id": 309,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791337517396,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 367,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791337741396,
+        "icon": null,
+        "id": 310,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791337735396,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 369,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791338087395,
+        "icon": null,
+        "id": 314,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338081395,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 371,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791338307396,
+        "icon": null,
+        "id": 317,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338301396,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 373,
+      "notification": {
+        "actions": [
+          "run",
+          "Run Cachy-Update",
+          "close",
+          "Close"
+        ],
+        "app_name": "Cachy-Update",
+        "body": "15 updates available",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1791338433310,
+        "icon": "cachy-update_updates-available-blue",
+        "id": 318,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338427310,
+        "summary": "Cachy-Update",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 375,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791338456395,
+        "icon": null,
+        "id": 319,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338450395,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 377,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791338602396,
+        "icon": null,
+        "id": 320,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338596396,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 379,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791338771396,
+        "icon": null,
+        "id": 321,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791338765396,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 381,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791339799944,
+        "icon": null,
+        "id": 323,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791339793944,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 383,
+      "notification": {
+        "actions": [
+          "run",
+          "Run Cachy-Update",
+          "close",
+          "Close"
+        ],
+        "app_name": "Cachy-Update",
+        "body": "15 updates available",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1791340058791,
+        "icon": "cachy-update_updates-available-blue",
+        "id": 324,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791340052791,
+        "summary": "Cachy-Update",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 385,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791340189909,
+        "icon": null,
+        "id": 327,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791340183909,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 387,
+      "notification": {
+        "actions": [],
+        "app_name": "CachyOS Update",
+        "body": "Reboot is recommended due to the upgrade of core system package(s).",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1791377122088,
+        "icon": "system-reboot",
+        "id": 328,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791377112088,
+        "summary": "Reboot recommended!",
+        "timeout": 10000,
+        "urgency": "critical"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 389,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791377449008,
+        "icon": null,
+        "id": 330,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791377443008,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 391,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791377681006,
+        "icon": null,
+        "id": 331,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791377675006,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 393,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791377965005,
+        "icon": null,
+        "id": 333,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791377959005,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 395,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791378326746,
+        "icon": null,
+        "id": 334,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791378320746,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 397,
+      "notification": {
+        "actions": [
+          "default",
+          "Action"
+        ],
+        "app_name": "qBittorrent",
+        "body": "This behavior can be changed in the settings. You won't be reminded again.",
+        "category": null,
+        "desktop_entry": "org.qbittorrent.qBittorrent",
+        "expiry_wall_ms": 1791379918489,
+        "icon": "qbittorrent",
+        "id": 335,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791379912489,
+        "summary": "qBittorrent is closed to tray",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "dismissed",
+      "event_serial": 399,
+      "notification": {
+        "actions": [
+          "run",
+          "Run Cachy-Update",
+          "close",
+          "Close"
+        ],
+        "app_name": "Cachy-Update",
+        "body": "4 updates available",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1791380155417,
+        "icon": "cachy-update_updates-available-blue",
+        "id": 336,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791380149417,
+        "summary": "Cachy-Update",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 401,
+      "notification": {
+        "actions": [
+          "default",
+          "Action"
+        ],
+        "app_name": "qBittorrent",
+        "body": "'Car Mechanic Simulator 2021 [FitGirl Repack]' has finished downloading.",
+        "category": null,
+        "desktop_entry": "org.qbittorrent.qBittorrent",
+        "expiry_wall_ms": 1791380414846,
+        "icon": "qbittorrent",
+        "id": 337,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791380408846,
+        "summary": "Download completed",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 403,
+      "notification": {
+        "actions": [],
+        "app_name": "ProtonPlus",
+        "body": "Proton-CachyOS Latest",
+        "category": null,
+        "desktop_entry": "com.vysp3r.ProtonPlus",
+        "expiry_wall_ms": 1791382394635,
+        "icon": "folder-download-symbolic",
+        "id": 339,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791382388635,
+        "summary": "Download finished",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 405,
+      "notification": {
+        "actions": [],
+        "app_name": "bottles",
+        "body": "“1” was created successfully.",
+        "category": null,
+        "desktop_entry": "com.usebottles.bottles",
+        "expiry_wall_ms": 1791382527518,
+        "icon": null,
+        "id": 340,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791382521518,
+        "summary": "Bottle Created",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 407,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791418675751,
+        "icon": null,
+        "id": 341,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791418669751,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 409,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791419756749,
+        "icon": null,
+        "id": 345,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791419750749,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 411,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791419836749,
+        "icon": null,
+        "id": 348,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791419830749,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 413,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791420234751,
+        "icon": null,
+        "id": 351,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791420228751,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 415,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791420454242,
+        "icon": null,
+        "id": 355,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791420448242,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 417,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "Antigravity",
+        "body": "Hyprland Lua Configuration Split",
+        "category": null,
+        "desktop_entry": "antigravity",
+        "expiry_wall_ms": 1791420479241,
+        "icon": null,
+        "id": 356,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791420473241,
+        "summary": "Antigravity",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 419,
+      "notification": {
+        "actions": [
+          "run",
+          "Run Cachy-Update",
+          "close",
+          "Close"
+        ],
+        "app_name": "Cachy-Update",
+        "body": "6 updates available",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1791422090468,
+        "icon": "cachy-update_updates-available-blue",
+        "id": 357,
+        "image_data": null,
+        "origin": "external",
+        "persist_in_history": false,
+        "received_wall_ms": 1791422084468,
+        "summary": "Cachy-Update",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    }
+  ],
+  "next_id": 358,
+  "version": 2
+}

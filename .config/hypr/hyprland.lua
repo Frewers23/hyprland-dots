@@ -7,5 +7,7 @@ require("look")
 require("rules")
 require("binds")
 
+
+
 -- For Noctalia Color templates
 require("noctalia").apply_theme()

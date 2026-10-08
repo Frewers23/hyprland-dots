@@ -1,0 +1,24 @@
+{
+  "Applications": [
+    "/usr/share/applications/antigravity.desktop",
+    "/usr/share/applications/spotify-launcher.desktop",
+    "/usr/share/applications/btop.desktop",
+    "/usr/share/applications/com.usebottles.bottles.desktop",
+    "/usr/share/applications/com.vysp3r.ProtonPlus.desktop",
+    "/usr/share/applications/org.qbittorrent.qBittorrent.desktop",
+    "/var/lib/flatpak/exports/share/applications/org.vinegarhq.Sober.desktop",
+    "/usr/share/applications/steam.desktop",
+    "/usr/share/applications/org.gnome.Resources.desktop",
+    "/usr/share/applications/thunar.desktop",
+    "/usr/share/applications/cachyos-hello.desktop",
+    "/usr/share/applications/vesktop.desktop",
+    "/usr/share/applications/zen.desktop",
+    "/usr/share/applications/org.prismlauncher.PrismLauncher.desktop",
+    "/usr/share/applications/lmstudio-beta.desktop",
+    "/usr/share/applications/net.nokyan.Resources.desktop",
+    "/usr/share/applications/lmstudio.desktop",
+    "/usr/share/applications/org.opengamingcollective.rog-control-center.desktop",
+    "/usr/share/applications/io.github.bluemancz.hyprmod.desktop",
+    "/usr/share/applications/Alacritty.desktop"
+  ]
+}

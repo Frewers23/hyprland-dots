@@ -1,0 +1,20 @@
+module bar
+
+Bar                1.0 Bar.qml
+Pill               1.0 Pill.qml
+IconButton         1.0 IconButton.qml
+VolumeSlider       1.0 VolumeSlider.qml
+VolumeRow          1.0 VolumeRow.qml
+WorkspacesWidget   1.0 WorkspacesWidget.qml
+ActiveWindowWidget 1.0 ActiveWindowWidget.qml
+ClockWidget        1.0 ClockWidget.qml
+MediaWidget        1.0 MediaWidget.qml
+WeatherWidget      1.0 WeatherWidget.qml
+NetworkWidget      1.0 NetworkWidget.qml
+AudioWidget        1.0 AudioWidget.qml
+BatteryWidget      1.0 BatteryWidget.qml
+CalendarPopup      1.0 CalendarPopup.qml
+WeatherPopup       1.0 WeatherPopup.qml
+MediaPopup         1.0 MediaPopup.qml
+AudioPopup         1.0 AudioPopup.qml
+BatteryPopup       1.0 BatteryPopup.qml

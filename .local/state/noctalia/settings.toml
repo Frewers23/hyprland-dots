@@ -70,6 +70,9 @@ minimum_brightness = 0.99999997764825821
 background_opacity = 0.0
 hidden_tabs = [ "screen-time" ]
 
+    [control_center.calendar]
+    show_events_card = false
+
     [[control_center.shortcuts]]
     type = "wifi"
 
@@ -199,13 +202,17 @@ popup_borders = false
 popup_shadows = false
 time_format = "{:%H:%M:%S}"
 
+    [shell.greeter_sync]
+    auto_sync = true
+
     [shell.launcher]
     compact = true
 
     [shell.panel]
+    background_opacity = 0.0
     borders = false
     control_center_placement = "floating"
-    list_item_background = true
+    list_item_background = false
     shadow = false
 
     [shell.screenshot]
@@ -245,13 +252,13 @@ wallpaper_scheme = "m3-tonal-spot"
     ]
 
 [wallpaper.default]
-path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
+path = "/home/frewers/Pictures/a_snowy_mountain_tops.jpg"
 
 [wallpaper.last]
-path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
+path = "/home/frewers/Pictures/a_snowy_mountain_tops.jpg"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/frewers/Pictures/wallhaven-k8j6k6.jpg"
+path = "/home/frewers/Pictures/a_snowy_mountain_tops.jpg"
 
 [widget.airpods]
 type = "harveywuk/airpods:airpods"

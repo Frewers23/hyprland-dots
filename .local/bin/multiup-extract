@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+import sys
+import re
+import requests
+from bs4 import BeautifulSoup
+
+if len(sys.argv) < 2:
+    print("Użycie: multiup-extract <plik_z_linkami_multiup.txt>", file=sys.stderr)
+    sys.exit(1)
+
+input_file = sys.argv[1]
+
+try:
+    with open(input_file, "r") as f:
+        links = [line.strip() for line in f if line.strip()]
+except Exception as e:
+    print(f"Błąd odczytu pliku: {e}", file=sys.stderr)
+    sys.exit(1)
+
+session = requests.Session()
+session.headers.update({
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0"
+})
+
+for link in links:
+    try:
+        # POBIERANIE STRONY MIRROR
+        mirror_url = link.replace("/download/", "/en/mirror/")
+        res = session.get(mirror_url, timeout=15)
+        
+        if res.status_code != 200:
+            res = session.get(link, timeout=15)
+
+        soup = BeautifulSoup(res.text, "html.parser")
+        
+        # SZUKANIE FORMULARZY Z HOSTAMI
+        forms = soup.find_all("form")
+        found_link = None
+
+        for form in forms:
+            action = form.get("action", "")
+            # Sprawdzamy, czy formularz prowadzi do zewnętrznego hostingu lub pobierania
+            if "download" in action or "multiup" in action:
+                inputs = {inp.get("name"): inp.get("value", "") for inp in form.find_all("input") if inp.get("name")}
+                if inputs:
+                    post_res = session.post(action, data=inputs, timeout=15, allow_redirects=True)
+                    if post_res.status_code == 200:
+                        # Sprawdzamy nagłówek URL po przekierowaniu
+                        if not "multiup.io" in post_res.url:
+                            found_link = post_res.url
+                            break
+
+        # FALLBACK: Jeśli formularz nie przekierował, szukamy bezpośrednich odnośników w kodzie
+        if not found_link:
+            for a_tag in soup.find_all("a", href=True):
+                href = a_tag["href"]
+                if any(h in href.lower() for h in ["1fichier.com", "gofile.io", "pixeldrain.com", "megaup.net"]):
+                    found_link = href
+                    break
+
+        if found_link:
+            print(found_link)
+        else:
+            print(f"# Nie udało się ominąć strony pośredniej dla: {link}", file=sys.stderr)
+
+    except Exception as e:
+        print(f"# Błąd przetwarzania {link}: {e}", file=sys.stderr)

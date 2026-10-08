@@ -1,0 +1,7 @@
+[catalog.waybar]
+name = "Waybar"
+category = "shell"
+
+[templates.waybar]
+input_path = "colors.css"
+output_path = "$XDG_CONFIG_HOME/waybar/colors.css"

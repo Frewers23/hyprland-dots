@@ -1,7 +1,57 @@
 * {
-    background: #36402ee6;
-    foreground: #cccfca;
-    primary: #26AFE5;
-    surface-container: #36402ed0;
-    surface-variant: #7b8870d0;
+    background: {
+  "dark": {
+    "color": "#101418"
+  },
+  "default": {
+    "color": "#101418"
+  },
+  "light": {
+    "color": "#f7f9ff"
+  }
+}e6;
+    foreground: {
+  "dark": {
+    "color": "#e0e2e8"
+  },
+  "default": {
+    "color": "#e0e2e8"
+  },
+  "light": {
+    "color": "#181c20"
+  }
+};
+    primary: {
+  "dark": {
+    "color": "#9ccbfb"
+  },
+  "default": {
+    "color": "#9ccbfb"
+  },
+  "light": {
+    "color": "#30628c"
+  }
+};
+    surface-container: {
+  "dark": {
+    "color": "#1c2024"
+  },
+  "default": {
+    "color": "#1c2024"
+  },
+  "light": {
+    "color": "#eceef4"
+  }
+}d0;
+    surface-variant: {
+  "dark": {
+    "color": "#42474e"
+  },
+  "default": {
+    "color": "#42474e"
+  },
+  "light": {
+    "color": "#dee3eb"
+  }
+}d0;
 }

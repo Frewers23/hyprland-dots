@@ -2,3 +2,12 @@
     font-family: "Iosevka Nerd Font", monospace !important;
     font-size: 13px !important;
 }
+
+window#control_center, window#control-center, window#noctalia-panel, window#panel {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+window.background, window.csd, window.solid-csd, window {
+    background: transparent !important;
+    background-color: transparent !important;
+}

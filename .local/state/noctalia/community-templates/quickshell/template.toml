@@ -1,0 +1,8 @@
+[catalog.quickshell]
+name = "Quickshell"
+category = "shell"
+
+[templates.quickshell]
+input_path = "Colors.qml"
+output_path = "$XDG_CONFIG_HOME/quickshell/Colors.qml"
+hook_async = false
