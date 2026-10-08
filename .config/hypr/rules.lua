@@ -33,4 +33,3 @@ hl.layer_rule({
     ignore_alpha = 1,
 })
 
-hl.layer_rule({
