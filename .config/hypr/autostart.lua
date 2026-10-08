@@ -9,5 +9,7 @@ hl.on("hyprland.start", function()
     
     -- From hyprland-custom.lua
     hl.exec_cmd("env LC_TIME=en_US.UTF-8 noctalia --daemon")
-    hl.exec_cmd("quickshell")
+    
+    
+    
 end)
