@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+    echo "Usage: set-wallpaper /path/to/image.jpg"
+    exit 1
+fi
+
+IMAGE="$(realpath "$1")"
+
+# 1. Update hyprpaper.conf for persistence
+cat << HP > ~/.config/hypr/hyprpaper.conf
+preload = $IMAGE
+wallpaper = ,$IMAGE
+HP
+
+# 2. Set wallpaper live with hyprpaper
+if ! pgrep hyprpaper > /dev/null; then
+    hyprpaper &
+    sleep 1
+else
+    hyprctl hyprpaper preload "$IMAGE"
+    for mon in $(hyprctl monitors -j | jq -r '.[].name'); do
+        hyprctl hyprpaper wallpaper "$mon,$IMAGE"
+    done
+fi
+
+# 3. Generate colors with pywal
+wal -i "$IMAGE" -n -q
+
+# 4. Update Quickshell colors
+python3 ~/.config/quickshell/update_colors.py
+killall quickshell || true
+quickshell &
+
+# 5. Generate Rofi colors
+cat << ROFI > ~/.config/rofi/colors.rasi
+* {
+    background: $(cat ~/.cache/wal/colors.json | jq -r '.special.background')e6;
+    foreground: $(cat ~/.cache/wal/colors.json | jq -r '.special.foreground');
+    primary: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color4');
+    surface_container: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color0')d0;
+    surface_variant: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color8')d0;
+}
+ROFI
+
+echo "Done! Wallpaper and colors updated."

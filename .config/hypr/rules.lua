@@ -39,5 +39,5 @@ hl.layer_rule({
         namespace = "quickshell",
     },
     blur = true,
-    ignore_zero = true,
+    ignore_alpha = 1,
 })
