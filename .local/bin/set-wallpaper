@@ -24,10 +24,11 @@ else
     done
 fi
 
-# 3. Generate colors with pywal
-wal -i "$IMAGE" -n -q
+# 3. Generate colors with matugen (Material Design 3)
+mkdir -p ~/.cache
+~/.local/bin/matugen image "$IMAGE" --source-color-index 0 -j hex > ~/.cache/matugen_colors.json
 
-# 4. Update Quickshell colors
+# 4. Update Quickshell colors using matugen output
 python3 ~/.config/quickshell/update_colors.py
 killall quickshell || true
 quickshell &
@@ -35,12 +36,12 @@ quickshell &
 # 5. Generate Rofi colors
 cat << ROFI > ~/.config/rofi/colors.rasi
 * {
-    background: $(cat ~/.cache/wal/colors.json | jq -r '.special.background')e6;
-    foreground: $(cat ~/.cache/wal/colors.json | jq -r '.special.foreground');
-    primary: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color4');
-    surface-container: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color0')d0;
-    surface-variant: $(cat ~/.cache/wal/colors.json | jq -r '.colors.color8')d0;
+    background: $(cat ~/.cache/matugen_colors.json | jq -r '.colors.surface')e6;
+    foreground: $(cat ~/.cache/matugen_colors.json | jq -r '.colors.on_surface');
+    primary: $(cat ~/.cache/matugen_colors.json | jq -r '.colors.primary');
+    surface-container: $(cat ~/.cache/matugen_colors.json | jq -r '.colors.surface_container')d0;
+    surface-variant: $(cat ~/.cache/matugen_colors.json | jq -r '.colors.surface_variant')d0;
 }
 ROFI
 
-echo "Done! Wallpaper and colors updated."
+echo "Done! Wallpaper and colors updated with Material You."
